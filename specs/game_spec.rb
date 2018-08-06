@@ -22,6 +22,11 @@ class TestGame < MiniTest::Test
     assert_equal("paper wins", result)
   end
 
+  def test_scissors_win()
+    result = @game4.play()
+    assert_equal("scissors win", result)
+  end
+
   def test_draw()
     result = @game3.play()
     assert_equal("it's a draw", result)

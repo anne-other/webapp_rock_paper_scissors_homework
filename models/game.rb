@@ -10,7 +10,9 @@ class Game
       return "rock wins"
     elsif (@hand1 == "rock" || @hand2 == "rock") && (@hand1 == "paper" || @hand2 == "paper")
       return "paper wins"
-    elsif @hand1 == @hand2
+    elsif (@hand1 == "scissors" || @hand2 == "scissors") && (@hand1 == "paper" || @hand2 == "paper")
+      return "scissors win"
+    else
       return "it's a draw"
     end
   end
