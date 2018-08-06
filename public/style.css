@@ -17,13 +17,22 @@
 }
 
 body {
-  background-color: rgb(246,248,255)
+  background-color: rgb(244,246,255);
+  margin: 30px;
 }
 
 h1, h2 {
   font-family: 'Ubuntu', sans-serif;
 }
 
+h2 {
+  color: rgb(139,0,0);
+}
+
 p, a, li {
   font-family: 'Arvo', serif;
+}
+
+a {
+  color: rgb(30, 5, 255);
 }
