@@ -12,9 +12,14 @@ class TestGame < MiniTest::Test
     @game4 = Game.new("scissors", "paper")
   end
 
-  def test_rock_wins
+  def test_rock_wins()
     result = @game1.play()
     assert_equal("rock wins", result)
+  end
+
+  def test_paper_wins()
+    result = @game2.play()
+    assert_equal("paper wins", result)
   end
 
 end

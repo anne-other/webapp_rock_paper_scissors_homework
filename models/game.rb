@@ -6,9 +6,14 @@ class Game
   end
 
   def play()
-    if (@hand1 =="rock" || @hand2 == "rock") && (@hand1 =="scissors" || @hand2 == "scissors")
-      return "rock wins"
-    end
-  end
+  #   if (@hand1 =="rock" || @hand2 == "rock") && (@hand1 =="scissors" || @hand2 == "scissors")
+  #     return "rock wins"
+  #   else
+  #   end
+  # end
 
+  case [@hand1, @hand2, @hand1, @hand2]
+  when ["rock" || "rock" && "scissors" || "scissors"]
+    return "rock wins"
+  end
 end
