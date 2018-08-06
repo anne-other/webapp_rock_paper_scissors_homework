@@ -7,11 +7,23 @@ class Game
 
   def play()
     if (@hand1 == "rock" || @hand2 == "rock") && (@hand1 =="scissors" || @hand2 == "scissors")
-      return "rock wins"
+      if @hand1 == "rock"
+        return "Player 1 wins"
+      else
+        return "Player 2 wins"
+      end
     elsif (@hand1 == "rock" || @hand2 == "rock") && (@hand1 == "paper" || @hand2 == "paper")
-      return "paper wins"
+      if @hand1 == "paper"
+        return "Player 1 wins"
+      else
+        return "Player 2 wins"
+      end
     elsif (@hand1 == "scissors" || @hand2 == "scissors") && (@hand1 == "paper" || @hand2 == "paper")
-      return "scissors win"
+      if @hand1 == "scissors"
+        return "Player 1 wins"
+      else
+        return "Player 2 wins"
+      end
     else
       return "it's a draw"
     end
