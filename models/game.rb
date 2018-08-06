@@ -5,15 +5,20 @@ class Game
     @hand2 = hand2
   end
 
-  def play()
+
   #   if (@hand1 =="rock" || @hand2 == "rock") && (@hand1 =="scissors" || @hand2 == "scissors")
   #     return "rock wins"
   #   else
   #   end
   # end
-
-  case [@hand1, @hand2, @hand1, @hand2]
-  when ["rock" || "rock" && "scissors" || "scissors"]
-    return "rock wins"
+  def play()
+    result = case [@hand1, @hand2]
+    when ["rock", "scissors"]
+      "rock wins"
+    when ["rock", "paper"]
+      "paper wins"
+    end
+    return result
   end
+
 end
